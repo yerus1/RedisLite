@@ -3,7 +3,7 @@
 @Service
 public class KVStoreService {
 
-  private final LRUCache cache = new LRUCache(100); // capacity = 100
+  private final LRUCache cache = new LRUCache(100); 
 
   public String get(String key) {
     return cache.get(key);
